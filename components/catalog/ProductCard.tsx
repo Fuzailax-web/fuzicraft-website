@@ -184,19 +184,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <button
               onClick={() => onOpenLiveDemo(product)}
               title="Launch Live Interactive Sandbox"
-              className="p-2.5 rounded-xl bg-white/[0.05] hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white transition-all flex items-center gap-1.5 text-xs font-mono"
+              className="px-4 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold shadow-md transition-all flex items-center gap-1.5 active:scale-95"
             >
-              <Play className="w-3.5 h-3.5 fill-current" />
-              <span className="hidden sm:inline">Preview</span>
+              <span>Live Preview &rarr;</span>
             </button>
 
             {/* Buy Now Trigger */}
             <button
               onClick={() => onOpenCheckout(product)}
-              className="px-4 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold shadow-md transition-all flex items-center gap-1.5 active:scale-95"
+              className="px-4 py-2.5 rounded-xl bg-white/[0.05] hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white transition-all flex items-center gap-1.5 text-xs font-mono active:scale-95"
             >
               <span>Customize</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-black" />
             </button>
           </div>
         </div>

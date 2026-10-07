@@ -31,9 +31,15 @@ export interface CatalogItem {
   thumbnail: string;
   previewImages: string[];
   demoUrl: string;
+  demoRoute?: string;
   mockPreviewHtml?: string;
   techStack: TechStackItem[];
   features: string[];
+  included?: string[];
+  perfectFor?: string[];
+  tags?: string[];
+  featured?: boolean;
+  name?: string;
   pagesCount: number;
   lighthouse: LighthouseMetrics;
   cmsIntegration: string;
